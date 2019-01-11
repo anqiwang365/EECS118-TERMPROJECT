@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.ControllerManger">
+   <children>
+      <ImageView fitHeight="453.0" fitWidth="610.0" layoutX="-3.0" layoutY="-5.0">
+         <image>
+            <Image url="@4.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="229.0" layoutY="26.0" text="编辑边">
+         <font>
+            <Font name="LiSu" size="43.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#e11a1a" />
+                  <Stop color="#dda20c" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="71.0" layoutY="61.0" prefHeight="64.0" prefWidth="99.0" text="起始点">
+         <font>
+            <Font name="LiSu" size="29.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#e11a1a" />
+                  <Stop color="#e0c612" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="72.0" layoutY="136.0" prefHeight="77.0" prefWidth="84.0" text="终止点">
+         <font>
+            <Font name="LiSu" size="28.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#e11a1a" />
+                  <Stop color="#e0c612" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="63.0" layoutY="240.0" prefHeight="45.0" prefWidth="84.0" text="长度">
+         <font>
+            <Font name="LiSu" size="31.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#e11a1a" />
+                  <Stop color="#e0c612" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="startVertex" layoutX="225.0" layoutY="82.0" opacity="0.66" />
+      <TextField fx:id="endVertex" layoutX="225.0" layoutY="163.0" opacity="0.65" />
+      <TextField fx:id="weight" layoutX="225.0" layoutY="251.0" opacity="0.57" />
+      <Button fx:id="addEdgeButton" blendMode="GREEN" layoutX="63.0" layoutY="337.0" mnemonicParsing="false" onAction="#addEdge" prefHeight="38.0" prefWidth="71.0" text="添加">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="removeEdgeButton" blendMode="GREEN" layoutX="208.0" layoutY="337.0" mnemonicParsing="false" onAction="#removeEdge" prefHeight="38.0" prefWidth="65.0" text="删除">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" blendMode="GREEN" layoutX="349.0" layoutY="337.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="38.0" prefWidth="65.0" text="返回">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="remind" layoutX="446.0" layoutY="179.0" prefHeight="64.0" prefWidth="111.0" />
+   </children>
+</AnchorPane>

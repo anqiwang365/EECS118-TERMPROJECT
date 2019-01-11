@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.ControllerFuction">
+   <children>
+      <ImageView fitHeight="136.0" fitWidth="600.0" layoutX="-68.0" layoutY="-6.0">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="323.0" fitWidth="600.0" layoutY="78.0">
+         <image>
+            <Image url="@2.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="213.0" layoutY="20.0" text="景点查询">
+         <font>
+            <Font name="LiSu" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="101.0" text="输入关键字">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#0ee56d" />
+                  <Stop color="#1748da" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="28.0" layoutY="151.0" text="查询结果">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#0ee56d" />
+                  <Stop color="#1748da" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="keyword" layoutX="176.0" layoutY="101.0" opacity="0.26" prefHeight="27.0" prefWidth="138.0" />
+      <Button fx:id="backButton" blendMode="GREEN" layoutX="38.0" layoutY="350.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="34.0" prefWidth="72.0" text="返回">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchspotButton" blendMode="GREEN" layoutX="345.0" layoutY="101.0" mnemonicParsing="false" onAction="#showSearchSpot" text="确定">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="showSpot" layoutX="22.0" layoutY="187.0" prefHeight="72.0" prefWidth="163.0" />
+   </children>
+</AnchorPane>
